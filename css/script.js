@@ -1,8 +1,8 @@
 const nxtBtn = document.querySelector(".mouse-click:nth-child(2)");
 const prevBtn = document.querySelector(".mouse-click:nth-child(3)");
 const playPauseBtn = document.querySelector(".mouse-click:nth-child(1)");
-var count = 0;
 var list = 0;
+var count = 0;
 const song = document.querySelector(".song");
 const progress = document.querySelector(".progress");
 const track = document.querySelector(".albums-container");
@@ -10,7 +10,7 @@ const arts = Array.from(track.children);
 const title_track = document.querySelector(".title-container");
 const titles = Array.from(title_track.children);
 const SetArtPosition = (art , index) => {
-    art.style.left = 150 *index + 'px';
+    art.style.left = 200 *index + 'px';
 };
 
 //song metadata
@@ -21,7 +21,7 @@ song.onloadedmetadata = function(){
 // play pause function
 function playPause(){
     if(count == 0){
-        count = 1;
+        count =1 ;
         song.play();
     }
     else{
@@ -29,6 +29,7 @@ function playPause(){
         song.pause();
     }
 }
+console.log(count)
 
 //track slider animation
 if(song.play()){
@@ -41,7 +42,7 @@ progress.onchange = function(){
     song.play();
     song.currentTime = progress.value;
 }
-
+ 
 const sources = [
     "css/Assets/Songs/audio-1.mp3",
     "css/Assets/Songs/audio-2.mp3",
@@ -79,7 +80,8 @@ nxtBtn.addEventListener('click', e => {
     document.querySelector(".songSource").src=sources[list];
     console.log(sources[list]);
     song.load();
-    song.play();
+    count=1;
+    
 
 })
 prevBtn.addEventListener('click', e => {
@@ -93,5 +95,5 @@ prevBtn.addEventListener('click', e => {
     document.querySelector(".songSource").src=sources[list];
     console.log(sources[list]);
     song.load();
-    song.play();
+    count = 1;
 })
