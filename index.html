@@ -1,141 +1,178 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Amit's Top 7</title>
-    <link rel="stylesheet" href="css/site_styles.css">
-    <link rel="icon" href="css/Assets/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=550">
-</head>
+    <link rel="stylesheet" href="css/site_styles.css" />
+    <link rel="icon" href="css/Assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=550" />
+  </head>
 
+  <body>
+    <div class="pod-container">
+      <img
+        class="pod-bod"
+        src="css/Assets/iPod Elements/Body.png"
+        alt="MyPod-Body"
+      />
+      <div class="ring-wrapper">
+        <div class="mouse-click" onclick="playPause()"></div>
+        <div class="mouse-click"></div>
+        <div class="mouse-click"></div>
+        <div class="mouse-click"></div>
 
-<body>
-    
-        <div class="pod-container">
-            <img class="pod-bod" src="css/Assets/iPod Elements/Body.png" alt="MyPod-Body">
-            <div class="ring-wrapper">
-                <div class="mouse-click" onclick="playPause()"></div>
-                <div class="mouse-click"></div>
-                <div class="mouse-click"></div>
-                <div class="mouse-click"></div>
-    
-                <div class="ring-btn">
-                    <img src="css/Assets/iPod Elements/control.png" alt="MyPod-ring">
-                </div>
-            </div>
-    
-            <div class="mid-wrapper">
-                <div id="mid-btn">
-                    <img src="css/Assets/iPod Elements/MidButton.png" alt="MyPod-mid">
-                </div>
-            
-            </div>
-            <div class="albums-wrapper">
-                <ul class="albums-container">
-                    <li class="albums current-art">
-                        <a href="https://www.youtube.com/watch?v=twQ6kKjtBkY"><img class="album-art" src="https://i.ibb.co/fNYSKBT/Quadeca-I-didnt-mean-to-haunt-you.jpg" alt="Quadeca-I didnt meant to haunt you"></a>
-                    </li>
-                    <li class="albums">
-                        <a href="https://www.youtube.com/watch?v=ZJxdYtNWLEs"><img class="album-art" src="https://i.ibb.co/NKhKDXp/Yeat-Geek-Pack.jpg" alt="Yeat-Geek Pack"></a>
-                    </li>
-                    <li class="albums">
-                        <a href="https://www.youtube.com/watch?v=IbNe-pOkapE"><img class="album-art" src="https://i.ibb.co/mcG5zsb/Yeat-Afterlyfe.jpg" alt="Yeat-Afterlyfe"></a>
-                    </li>
-                    <li class="albums">
-                        <a href="https://www.youtube.com/watch?v=UfNuombVZb4"><img class="album-art" src="https://i.ibb.co/jMJ6ykn/Destroy-Lonely-If-looks-could-kill.png"
-                            alt="Dstrylnly-IfLCK"></a>
-                    </li>
-                    <li class="albums">
-                        <a href="https://www.youtube.com/watch?v=HltALJQI47g"><img class="album-art" src="https://i.ibb.co/PcS9n3K/So-Faygo-After-Me.jpg" alt="SoFaygo-After Me"></a>
-                    </li>
-                    <li class="albums">
-                        <a href="https://www.youtube.com/watch?v=3tTY0JON5I0"><img class="album-art" src="https://i.ibb.co/rHygqmS/Weiland-Weiland.jpg"
-                            alt="Weiland-Weiland"></a>
-                    </li>
-                    <li class="albums">
-                        <a href="https://www.youtube.com/watch?v=sUb9-18nrWo"><img class="album-art" src="https://i.ibb.co/sK24Vz5/Kankan-B4-RR.jpg"
-                            alt="Kankan-##B4RR"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="title-list-container">
-                <ul class="title-container">
-                    <li class="tiltle visible">
-                        <div class="title-content">
-                            <h1>Tell Me A Joke</h1>
-                            
-                            <h2>Quadeca</h2>
-                            <p>1 of 7</p>
-                        </div>
-                    </li>
-                    <li class="tiltle hidden">
-                        <div class="title-content">
-                            <h1>New Turban</h1>
-                            <h2>Yeat</h2>
-                            <p>2 of 7</p>
-                        </div>
-                    </li>
-                    <li class="tiltle hidden">
-                        <div class="title-content">
-                            <h1>Myself</h1>
-                            
-                            <h2>Yeat</h2>
-                            <p>3 of 7</p>
-                        </div>
-                    </li>
-                    <li class="tiltle hidden">
-                        <div class="title-content">
-                            <h1>If looks could kill</h1>
-                            
-                            <h2>Destroy Lonely</h2>
-                            <p>4 of 7</p>
-                        </div>
-                    </li>
-                    <li class="tiltle hidden">
-                        <div class="title-content">
-                            <h1>Everyday</h1>
-                            
-                            <h2>SoFaygo</h2>
-                            <p>5 of 7</p>
-                        </div>
-                    </li>
-                    <li class="tiltle hidden">
-                        <div class="title-content">
-                            <h1>Have You Ever</h1>
-                            
-                            <h2>Weiland</h2>
-                            <p>6 of 7</p>
-                        </div>
-                    </li>
-                    <li class="tiltle hidden">
-                        <div class="title-content">
-                            <h1>Broad day</h1>
-                            
-                            <h2>Kankan</h2>
-                            <p>7 of 7</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="track-player-container">
-                <input class="progress" type="range" value="0">
-                <audio class="song" autoplay>
-                    <source class="songSource" src="css/Assets/Songs/audio-1.mp3" type="audio/mp3" >
-                </audio>
-                
-            </div>
+        <div class="ring-btn">
+          <img src="css/Assets/iPod Elements/control.png" alt="MyPod-ring" />
         </div>
-        
+      </div>
 
-    
+      <div class="mid-wrapper">
+        <div id="mid-btn">
+          <img src="css/Assets/iPod Elements/MidButton.png" alt="MyPod-mid" />
+        </div>
+      </div>
+      <div class="albums-wrapper">
+        <ul class="albums-container">
+          <li class="albums current-art">
+            <a href="https://www.youtube.com/watch?v=twQ6kKjtBkY"
+              ><img
+                class="album-art"
+                src="https://i.ibb.co/fNYSKBT/Quadeca-I-didnt-mean-to-haunt-you.jpg"
+                alt="Quadeca-I didnt meant to haunt you"
+            /></a>
+          </li>
+          <li class="albums">
+            <a href="https://www.youtube.com/watch?v=ZJxdYtNWLEs"
+              ><img
+                class="album-art"
+                src="https://i.ibb.co/NKhKDXp/Yeat-Geek-Pack.jpg"
+                alt="Yeat-Geek Pack"
+            /></a>
+          </li>
+          <li class="albums">
+            <a href="https://www.youtube.com/watch?v=IbNe-pOkapE"
+              ><img
+                class="album-art"
+                src="https://i.ibb.co/mcG5zsb/Yeat-Afterlyfe.jpg"
+                alt="Yeat-Afterlyfe"
+            /></a>
+          </li>
+          <li class="albums">
+            <a href="https://www.youtube.com/watch?v=UfNuombVZb4"
+              ><img
+                class="album-art"
+                src="https://i.ibb.co/jMJ6ykn/Destroy-Lonely-If-looks-could-kill.png"
+                alt="Dstrylnly-IfLCK"
+            /></a>
+          </li>
+          <li class="albums">
+            <a href="https://www.youtube.com/watch?v=HltALJQI47g"
+              ><img
+                class="album-art"
+                src="https://i.ibb.co/PcS9n3K/So-Faygo-After-Me.jpg"
+                alt="SoFaygo-After Me"
+            /></a>
+          </li>
+          <li class="albums">
+            <a href="https://www.youtube.com/watch?v=3tTY0JON5I0"
+              ><img
+                class="album-art"
+                src="https://i.ibb.co/rHygqmS/Weiland-Weiland.jpg"
+                alt="Weiland-Weiland"
+            /></a>
+          </li>
+          <li class="albums">
+            <a href="https://www.youtube.com/watch?v=sUb9-18nrWo"
+              ><img
+                class="album-art"
+                src="https://i.ibb.co/sK24Vz5/Kankan-B4-RR.jpg"
+                alt="Kankan-##B4RR"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="title-list-container">
+        <ul class="title-container">
+          <li class="tiltle visible">
+            <div class="title-content">
+              <h1>Tell Me A Joke</h1>
+
+              <h2>Quadeca</h2>
+              <p>1 of 7</p>
+            </div>
+          </li>
+          <li class="tiltle hidden">
+            <div class="title-content">
+              <h1>New Turban</h1>
+              <h2>Yeat</h2>
+              <p>2 of 7</p>
+            </div>
+          </li>
+          <li class="tiltle hidden">
+            <div class="title-content">
+              <h1>Myself</h1>
+
+              <h2>Yeat</h2>
+              <p>3 of 7</p>
+            </div>
+          </li>
+          <li class="tiltle hidden">
+            <div class="title-content">
+              <h1>If looks could kill</h1>
+
+              <h2>Destroy Lonely</h2>
+              <p>4 of 7</p>
+            </div>
+          </li>
+          <li class="tiltle hidden">
+            <div class="title-content">
+              <h1>Everyday</h1>
+
+              <h2>SoFaygo</h2>
+              <p>5 of 7</p>
+            </div>
+          </li>
+          <li class="tiltle hidden">
+            <div class="title-content">
+              <h1>Have You Ever</h1>
+
+              <h2>Weiland</h2>
+              <p>6 of 7</p>
+            </div>
+          </li>
+          <li class="tiltle hidden">
+            <div class="title-content">
+              <h1>Broad day</h1>
+
+              <h2>Kankan</h2>
+              <p>7 of 7</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="track-player-container">
+        <span class="current-time">0:00</span>
+        <input class="progress" type="range" value="0" />
+        <span class="total-time">0:00</span>
+        <audio class="song" autoplay>
+          <source
+            class="songSource"
+            src="css/Assets/Songs/audio-1.mp3"
+            type="audio/mp3"
+          />
+        </audio>
+      </div>
+    </div>
+
     <script src="css/script.js" async defer></script>
-</body>
-
+  </body>
 </html>
